@@ -19,12 +19,14 @@ numbersections: true
 header-includes:
   # Jarak header : 1,5 cm, jarak footer : 1,5 cm. Header tidak digunakan, sedangkan footer digunakan hanya untuk meletakkan nomor halaman.
   - \usepackage{fancyhdr}
+  - \fancypagestyle{plain}{\pagestyle{fancy}}
   - \pagestyle{fancy}
   - \fancyhf{}
-  - \fancyfoot[C]{\thepage}
+  # Nomor halaman dituliskan di kanan bawah halaman yang berjarak 1,5 cm (sesuai jarak footer) di atas tepi bawah kertas.
+  - \fancyfoot[R]{\thepage}
   - \renewcommand{\headrulewidth}{0pt}
   - \renewcommand{\footrulewidth}{0pt}
-  - \setlength{\footskip}{0cm}
+  - \setlength{\footskip}{1.5cm}
   # Antara baris pada badan tulisan diberi jarak 1½  spasi.
   - \linespread{1.25}
   # Penomoran subbab menggunakan angka arab (1, 2, 3, dst) yang dipisahkan dengan titik. Penomoran sub bab maksimal 4 angka (4 level),
