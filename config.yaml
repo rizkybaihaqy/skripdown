@@ -32,12 +32,14 @@ header-includes:
   # Penomoran bab menggunakan angka romawi (I, II, III, dst) dituliskan rata tengah di bagian atas halaman.
   - \titleformat{\chapter}[display]{\filcenter\large\bfseries}{BAB \Roman{chapter}}{0pt}{\large\MakeUppercase}
   # Antara judul bab dan awal badan tulisan diberi jarak 3 spasi.
-  - \titlespacing*{\chapter}{0pt}{0pt}{36pt}
-  - \titleformat{\section}[hang]{\normalsize\bfseries}{\thesection.}{12pt}{}
+  - \titlespacing*{\chapter}{0pt}{-30pt}{12pt}
+  - \titleformat{\section}[hang]{\normalsize\bfseries}{\thesection.}{0pt}{}
   # Sedangkan antara judul sub bab dengan awal badan tulisan diberi  jarak 2 spasi.
-  - \titlespacing*{\section}{0pt}{0pt}{24pt}
-  - \titleformat{\subsection}[hang]{\normalsize\bfseries}{\thesubsection.}{12pt}{}
-  - \titleformat{\subsubsection}[hang]{\normalsize\bfseries}{\thesubsubsection.}{12pt}{}
+  - \titlespacing*{\section}{0pt}{12pt}{12pt}
+  - \titleformat{\subsection}[hang]{\normalsize\bfseries}{\thesubsection.}{0pt}{}
+  - \titlespacing*{\subsection}{0pt}{12pt}{12pt}
+  - \titleformat{\subsubsection}[hang]{\normalsize\bfseries}{\thesubsubsection.}{0pt}{}
+  - \titlespacing*{\subsubsection}{0pt}{12pt}{12pt}
   - \setcounter{secnumdepth}{4}
   # Awal paragraf isi tulisan ditulis menjorok ke dalam (first line indent) sejauh 10 mm (1 cm).
   - \usepackage{indentfirst}
