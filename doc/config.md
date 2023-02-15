@@ -13,3 +13,9 @@
   - `\renewcommand{\footrulewidth}{0pt}`: menghilangkan garis pemisah antara footer dan konten dokumen.
   - `\setlength{\footskip}{0}`: mengatur jarak footer untuk lebih dekat ke text (diukur dengan mata telanjang disamakan dengan skripsi sebelumnya).
   - `\linespread{1.25}`: standar factor dari lineskip adalah 1.2. linespread dikali lineskip akan menghasilkan spasi 1.5 (1.25 \* 1.2 = 1.5).
+  - `\usepackage{titlesec}`: memuat paket LaTeX titlesec untuk mengatur format judul pada bab dan subbab.
+  - `\titleformat{\chapter}[display]{\filcenter\large\bfseries}{BAB \Roman{chapter}}{0pt}{\large\MakeUppercase}`: Penomoran bab menggunakan angka romawi (I, II, III, dst) dituliskan rata tengah di bagian atas halaman.
+  - `\titlespacing*{\chapter}{0pt}{0pt}{36pt}`: Antara judul bab dan awal badan tulisan diberi jarak 3 spasi.
+  - `\titleformat{\subsection}[hang]{\normalsize\bfseries}{\thesubsection.}{1em}{}`: mengatur format judul sub-sub bab sehingga menggunakan penomoran angka arab yang dipisahkan dengan titik. Penomoran sub-sub bab maksimal 4 level.
+  - `\titlespacing*{\section}{0pt}{0pt}{24pt}`: Antara judul sub bab dengan awal badan tulisan diberi jarak 2 spasi.
+  - `\titleformat{\subsubsection}[hang]{\normalsize\bfseries}{\thesubsubsection.}{1em}{}`: mengatur format judul sub-sub-sub bab sehingga menggunakan penomoran angka arab yang dipisahkan dengan titik. Penomoran sub-sub-sub bab maks

@@ -1,12 +1,14 @@
+documentclass: report
 # Naskah ditulis di kertas A4 (210 x 297 mm) standar HVS putih 80 gr/m2, dengan tampilan tegak (portrait), dengan batas atas : 3 cm, batas kiri : 3 cm, batas bawah : 2,5 cm, dan batas kanan 2,5 cm.
 geometry: top=3cm, bottom=2.5cm, left=3cm, right=2.5cm
 output:
   pdf_document:
-    pandoc_args: ["-V", "papersize:A4", "-V", "classoption:portrait"]
+    pandoc_args: ["-V", "papersize:A4", "-V", "classoption:portrait", "--top-level-division=chapter"]
     keep_tex: true
 # Semua jenis huruf (fontasi) yang digunakan adalah Times New Roman dan berukuran 12 pt (termasuk judul sub bab), sedangkan judul bab berukuran 14 pt.
 fontsize: 12pt
 mainfont: Times New Roman
+numbersections: true
 header-includes:
   # Jarak header : 1,5 cm, jarak footer : 1,5 cm. Header tidak digunakan, sedangkan footer digunakan hanya untuk meletakkan nomor halaman.
   - \usepackage{fancyhdr}
@@ -18,3 +20,15 @@ header-includes:
   - \setlength{\footskip}{0cm}
   # Antara baris pada badan tulisan diberi jarak 1½  spasi.
   - \linespread{1.25}
+  # Penomoran subbab menggunakan angka arab (1, 2, 3, dst) yang dipisahkan dengan titik. Penomoran sub bab maksimal 4 angka (4 level),
+  - \usepackage{titlesec}
+  # Penomoran bab menggunakan angka romawi (I, II, III, dst) dituliskan rata tengah di bagian atas halaman.
+  - \titleformat{\chapter}[display]{\filcenter\large\bfseries}{BAB \Roman{chapter}}{0pt}{\large\MakeUppercase}
+  # Antara judul bab dan awal badan tulisan diberi jarak 3 spasi.
+  - \titlespacing*{\chapter}{0pt}{0pt}{36pt}
+  - \titleformat{\section}[hang]{\normalsize\bfseries}{\thesection.}{12pt}{}
+  # Sedangkan antara judul sub bab dengan awal badan tulisan diberi  jarak 2 spasi.
+  - \titlespacing*{\section}{0pt}{0pt}{24pt}
+  - \titleformat{\subsection}[hang]{\normalsize\bfseries}{\thesubsection.}{12pt}{}
+  - \titleformat{\subsubsection}[hang]{\normalsize\bfseries}{\thesubsubsection.}{12pt}{}
+  - \setcounter{secnumdepth}{4}
