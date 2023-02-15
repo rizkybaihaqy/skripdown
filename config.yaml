@@ -1,0 +1,6 @@
+# Naskah ditulis di kertas A4 (210 x 297 mm) standar HVS putih 80 gr/m2, dengan tampilan tegak (portrait), dengan batas atas : 3 cm, batas kiri : 3 cm, batas bawah : 2,5 cm, dan batas kanan 2,5 cm.
+geometry: top=3cm, bottom=2.5cm, left=3cm, right=2.5cm
+output:
+  pdf_document:
+    pandoc_args: ["-V", "papersize:A4", "-V", "classoption:portrait"]
+    keep_tex: true
