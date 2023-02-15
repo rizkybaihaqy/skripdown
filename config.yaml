@@ -3,7 +3,14 @@ documentclass: report
 geometry: top=3cm, bottom=2.5cm, left=3cm, right=2.5cm
 output:
   pdf_document:
-    pandoc_args: ["-V", "papersize:A4", "-V", "classoption:portrait", "--top-level-division=chapter"]
+    pandoc_args:
+      [
+        "-V",
+        "papersize:A4",
+        "-V",
+        "classoption:portrait",
+        "--top-level-division=chapter",
+      ]
     keep_tex: true
 # Semua jenis huruf (fontasi) yang digunakan adalah Times New Roman dan berukuran 12 pt (termasuk judul sub bab), sedangkan judul bab berukuran 14 pt.
 fontsize: 12pt
@@ -32,3 +39,6 @@ header-includes:
   - \titleformat{\subsection}[hang]{\normalsize\bfseries}{\thesubsection.}{12pt}{}
   - \titleformat{\subsubsection}[hang]{\normalsize\bfseries}{\thesubsubsection.}{12pt}{}
   - \setcounter{secnumdepth}{4}
+  # Awal paragraf isi tulisan ditulis menjorok ke dalam (first line indent) sejauh 10 mm (1 cm).
+  - \usepackage{indentfirst}
+  - \setlength{\parindent}{10mm}
