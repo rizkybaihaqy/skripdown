@@ -2,6 +2,8 @@
 
 - `geometry`: mengatur margin dokumen. `margin` menentukan ukuran margin keseluruhan dokumen, sementara `top`, `bottom`, `left`, dan `right` menentukan ukuran margin masing-masing sisi.
 - `output`: mengatur output dokumen. Dalam hal ini, outputnya adalah dokumen PDF dengan pandoc arguments untuk mengatur ukuran kertas A4 dan tampilan portrait. `keep_tex` disetel ke `true` agar file `.tex` juga dihasilkan.
+- `mainfont`: Times New Roman: mengatur jenis huruf (fontasi) yang digunakan dalam dokumen menjadi Times New Roman.
+- `fontsize`: 12pt: mengatur ukuran font sebesar 12 pt untuk seluruh teks dalam dokumen, termasuk judul sub bab.
 - `header-includes`: menyediakan ruang untuk menambahkan paket LaTeX dan perintah-perintah khusus.
   - `\usepackage{fancyhdr}`: mengimpor paket LaTeX fancyhdr yang berguna untuk mengatur tampilan header dan footer.
   - `\pagestyle{fancy}`: mengatur tampilan halaman menggunakan paket fancyhdr.

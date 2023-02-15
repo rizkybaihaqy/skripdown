@@ -4,6 +4,9 @@ output:
   pdf_document:
     pandoc_args: ["-V", "papersize:A4", "-V", "classoption:portrait"]
     keep_tex: true
+# Semua jenis huruf (fontasi) yang digunakan adalah Times New Roman dan berukuran 12 pt (termasuk judul sub bab), sedangkan judul bab berukuran 14 pt.
+fontsize: 12pt
+mainfont: Times New Roman
 header-includes:
   # Jarak header : 1,5 cm, jarak footer : 1,5 cm. Header tidak digunakan, sedangkan footer digunakan hanya untuk meletakkan nomor halaman.
   - \usepackage{fancyhdr}
