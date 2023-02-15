@@ -16,3 +16,5 @@ header-includes:
   - \renewcommand{\headrulewidth}{0pt}
   - \renewcommand{\footrulewidth}{0pt}
   - \setlength{\footskip}{0cm}
+  # Antara baris pada badan tulisan diberi jarak 1½  spasi.
+  - \linespread{1.25}

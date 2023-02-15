@@ -12,3 +12,4 @@
   - `\renewcommand{\headrulewidth}{0pt}`: menghilangkan garis pemisah antara header dan konten dokumen.
   - `\renewcommand{\footrulewidth}{0pt}`: menghilangkan garis pemisah antara footer dan konten dokumen.
   - `\setlength{\footskip}{0}`: mengatur jarak footer untuk lebih dekat ke text (diukur dengan mata telanjang disamakan dengan skripsi sebelumnya).
+  - `\linespread{1.25}`: standar factor dari lineskip adalah 1.2. linespread dikali lineskip akan menghasilkan spasi 1.5 (1.25 \* 1.2 = 1.5).
