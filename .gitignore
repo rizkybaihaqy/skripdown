@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!config.yaml
+!example.pdf
+!example.md
+!example.png
+!readme.md
