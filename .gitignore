@@ -3,8 +3,10 @@
 
 # But not these files...
 !.gitignore
+!apa.csl
 !config.yaml
 !example.pdf
 !example.md
 !example.png
+!example.bib
 !readme.md
