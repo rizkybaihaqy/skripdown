@@ -14,8 +14,9 @@ Repository ini berisi konfigurasi untuk mengkonversi skripsi S1 Informatika Undi
 
 ## Penggunaan
 1. Unduh atau clone repository ini
-2. Buat skripsi anda di file markdown(.md)
-3. Jalankan perintah berikut
+2. Pastikan anda sudah meng-install engine pdf `xelatex`
+3. Buat skripsi anda di file markdown(.md)
+4. Contoh cara menjalankan perintah `pandoc` menggunakan file `example.md` dan `example.bib`
 ```bash
-pandoc file-skipsi.md --pdf-engine=xelatex --metadata-file config.yaml  -o skipsi.pdf
+pandoc example.md --citeproc --bibliography=example.bib --csl=apa.csl --pdf-engine=xelatex --metadata-file config.yaml -o example-1.pdf
 ```
