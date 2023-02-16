@@ -46,3 +46,12 @@ header-includes:
   # Awal paragraf isi tulisan ditulis menjorok ke dalam (first line indent) sejauh 10 mm (1 cm).
   - \usepackage{indentfirst}
   - \setlength{\parindent}{10mm}
+  # Keterangan objek diletakkan di bagian bawah objek tersebut di tengah halaman (center). Ukuran font 12 pt dan berjarak 1 spasi.
+  - \renewcommand{\figurename}{Gambar}
+  - \renewcommand{\tablename}{Tabel}
+  - \usepackage[labelsep=space]{caption}
+  # Antara objek dan keterangan objek diberi jarak sejauh 1 spasi. Sedangkan antara badan tulisan dengan objek dan keterangan objek dengan badan tulisan selanjutnya diberi jarak 2 spasi
+  - \usepackage{caption}
+  - \captionsetup[table]{aboveskip=-12pt, skip=12pt, font=small, labelfont=bf, justification=centering}
+  - \captionsetup[figure]{belowskip=-12pt, skip=12pt, font=small, labelfont=bf, justification=justified}
+  - \setlength{\intextsep}{24pt}
