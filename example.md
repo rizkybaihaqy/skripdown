@@ -136,9 +136,15 @@ Hindari gambar yang terlalu besar, Gambar yang terlalu besar akan menyebabkan ga
 
 ### Pemerian
 
-Gunakan angka, belum mendukung penggunaan huruf.
+Gunakan angka, dan huruf.
 
 1. Lorem.
+
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam harum ex illum tenetur nobis nam voluptatem maiores explicabo.
+
+   a. Ipsum
+   b. Velit
+
 2. Ipsum.
 3. Dolor.
 4. Sit.
