@@ -55,3 +55,6 @@ header-includes:
   - \captionsetup[table]{aboveskip=-12pt, skip=12pt, font=small, labelfont=bf, justification=centering}
   - \captionsetup[figure]{belowskip=-12pt, skip=12pt, font=small, labelfont=bf, justification=justified}
   - \setlength{\intextsep}{24pt}
+  # Tanpa before / after paragraph
+  - \usepackage{parskip}
+  - \setlength{\parskip}{0pt}
