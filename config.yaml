@@ -1,60 +1,49 @@
+# Metadata
+title: Judul Skripsi
+author: Penulis Skripsi
+date: 1 Januari 2023
+subtitle: Subtitle Skripsi
+keywords: skripsi, informatika
+subject: Judul skripsi
+# Bahasa
+lang: id
+dir: rtl
+# Latex
+# Layout
+block-headings: true
+classoption: portrait
 documentclass: report
-# Naskah ditulis di kertas A4 (210 x 297 mm) standar HVS putih 80 gr/m2, dengan tampilan tegak (portrait), dengan batas atas : 3 cm, batas kiri : 3 cm, batas bawah : 2,5 cm, dan batas kanan 2,5 cm.
-geometry: top=3cm, bottom=2.5cm, left=3cm, right=2.5cm
-output:
-  pdf_document:
-    pandoc_args:
-      [
-        "-V",
-        "papersize:A4",
-        "-V",
-        "classoption:portrait",
-        "--top-level-division=chapter",
-      ]
-    keep_tex: true
-# Semua jenis huruf (fontasi) yang digunakan adalah Times New Roman dan berukuran 12 pt (termasuk judul sub bab), sedangkan judul bab berukuran 14 pt.
+geometry:
+  - top=3cm
+  - bottom=2.5cm
+  - left=3cm
+  - right=2.5cm
+indent: true
+linestretch: 1.5
+pagestyle: plain
+papersize: A4
+secnumdepth: 4
+# Fonts
 fontsize: 12pt
 mainfont: Times New Roman
-numbersections: true
-header-includes:
-  # Jarak header : 1,5 cm, jarak footer : 1,5 cm. Header tidak digunakan, sedangkan footer digunakan hanya untuk meletakkan nomor halaman.
-  - \usepackage{fancyhdr}
-  - \fancypagestyle{plain}{\pagestyle{fancy}}
-  - \pagestyle{fancy}
-  - \fancyhf{}
-  # Nomor halaman dituliskan di kanan bawah halaman yang berjarak 1,5 cm (sesuai jarak footer) di atas tepi bawah kertas.
-  - \fancyfoot[R]{\thepage}
-  - \renewcommand{\headrulewidth}{0pt}
-  - \renewcommand{\footrulewidth}{0pt}
-  - \setlength{\footskip}{1.5cm}
-  # Antara baris pada badan tulisan diberi jarak 1½  spasi.
-  - \linespread{1.25}
-  # Penomoran subbab menggunakan angka arab (1, 2, 3, dst) yang dipisahkan dengan titik. Penomoran sub bab maksimal 4 angka (4 level),
-  - \usepackage{titlesec}
-  # Penomoran bab menggunakan angka romawi (I, II, III, dst) dituliskan rata tengah di bagian atas halaman.
-  - \titleformat{\chapter}[display]{\filcenter\large\bfseries}{BAB \Roman{chapter}}{0pt}{\large\MakeUppercase}
-  # Antara judul bab dan awal badan tulisan diberi jarak 3 spasi.
-  - \titlespacing*{\chapter}{0pt}{-30pt}{12pt}
-  - \titleformat{\section}[hang]{\normalsize\bfseries}{\thesection.}{12pt}{}
-  # Sedangkan antara judul sub bab dengan awal badan tulisan diberi  jarak 2 spasi.
-  - \titlespacing*{\section}{0pt}{12pt}{12pt}
-  - \titleformat{\subsection}[hang]{\normalsize\bfseries}{\thesubsection.}{12pt}{}
-  - \titlespacing*{\subsection}{0pt}{12pt}{12pt}
-  - \titleformat{\subsubsection}[hang]{\normalsize\bfseries}{\thesubsubsection.}{12pt}{}
-  - \titlespacing*{\subsubsection}{0pt}{12pt}{12pt}
-  - \setcounter{secnumdepth}{4}
-  # Awal paragraf isi tulisan ditulis menjorok ke dalam (first line indent) sejauh 10 mm (1 cm).
-  - \usepackage{indentfirst}
-  - \setlength{\parindent}{10mm}
-  # Keterangan objek diletakkan di bagian bawah objek tersebut di tengah halaman (center). Ukuran font 12 pt dan berjarak 1 spasi.
-  - \renewcommand{\figurename}{Gambar}
-  - \renewcommand{\tablename}{Tabel}
-  - \usepackage[labelsep=space]{caption}
-  # Antara objek dan keterangan objek diberi jarak sejauh 1 spasi. Sedangkan antara badan tulisan dengan objek dan keterangan objek dengan badan tulisan selanjutnya diberi jarak 2 spasi
-  - \usepackage{caption}
-  - \captionsetup[table]{aboveskip=-12pt, skip=12pt, font=small, labelfont=bf, justification=centering}
-  - \captionsetup[figure]{belowskip=-12pt, skip=12pt, font=small, labelfont=bf, justification=justified}
-  - \setlength{\intextsep}{24pt}
-  # Tanpa before / after paragraph
-  - \usepackage{parskip}
-  - \setlength{\parskip}{0pt}
+# Front matter
+lof: true
+lot: true
+toc: true
+toc-depth: 4
+# Back matter
+reference-section-title: "Daftar Pustaka"
+# Override
+numbersections: 4
+# header-includes:
+#   - \input{hacks/header.tex}
+include-before:
+  - \input{frontmatter/pernyataan.tex}
+  - \input{frontmatter/pengesahan.tex}
+  - \input{frontmatter/pengantar.tex}
+  - \input{frontmatter/persetujuan.tex}
+  - \input{frontmatter/abstrak.tex}
+  - \input{frontmatter/abstract.tex}
+include-after:
+  - \input{backmatter/lampiran.tex}
+

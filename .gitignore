@@ -10,3 +10,15 @@
 !example.png
 !example.bib
 !readme.md
+
+!/backmatter/lampiran.tex
+
+!/frontmatter/abstract.tex
+!/frontmatter/abstrak.tex
+!/frontmatter/pengantar.tex
+!/frontmatter/pengesahan.tex
+!/frontmatter/pernyataan.tex
+!/frontmatter/persetujuan.tex
+
+# ...even if they are in subdirectories
+!*/

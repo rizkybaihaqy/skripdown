@@ -187,8 +187,3 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi quis
 ## Saran
 
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla dolores obcaecati cupiditate, alias dolor ratione corporis nemo odio itaque qui iusto tempore, optio dignissimos harum! Similique totam suscipit eius voluptatem iste inventore perspiciatis.
-
-# Daftar Pustaka
-
-\bibliographystyle{apa}
-\bibliography{references}
