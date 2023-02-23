@@ -1,8 +1,8 @@
 # Metadata
 title: Judul Skripsi
 author: Penulis Skripsi
+nim: 24060118130999
 date: 1 Januari 2023
-subtitle: Subtitle Skripsi
 keywords: skripsi, informatika
 subject: Judul skripsi
 # Bahasa
@@ -35,8 +35,8 @@ toc-depth: 4
 reference-section-title: "Daftar Pustaka"
 # Override
 numbersections: 4
-# header-includes:
-#   - \input{hacks/header.tex}
+header-includes:
+  - \input{hacks/maketitle.tex}
 include-before:
   - \input{frontmatter/pernyataan.tex}
   - \input{frontmatter/pengesahan.tex}
@@ -46,4 +46,3 @@ include-before:
   - \input{frontmatter/abstract.tex}
 include-after:
   - \input{backmatter/lampiran.tex}
-

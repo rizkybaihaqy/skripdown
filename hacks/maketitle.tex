@@ -1,0 +1,26 @@
+% Redefine \maketitle command
+\makeatletter
+\renewcommand{\maketitle}{\begin{titlepage}
+    \begin{center}
+      {\large\textbf\@title\par}
+      \vskip 1.5em
+      \includegraphics{logo.png}
+      \vskip 1.5em
+      \large\bfseries SKRIPSI\par
+      \vskip 1.5em
+      \large\bfseries Disusun Sebagai Salah Satu Syarat\par
+      \large\bfseries untuk Memperoleh Gelar Sarjana Komputer\par
+      \large\bfseries pada Program Studi Informatika\par
+      \vskip 1.5em
+      \large\bfseries Disusun oleh:\par
+      \large\bfseries\@author\par
+      \large\bfseries\nim\par
+      \vspace*{\fill}
+      \large\bfseries DEPARTEMEN ILMU KOMPUTER/INFORMATIKA\par
+      \large\bfseries FAKULTAS SAINS DAN MATEMATIKA\par
+      \large\bfseries UNIVERSITAS DIPONEGORO\par
+      \large\bfseries \the\year{}\par
+    \end{center}
+  \end{titlepage}
+}
+\makeatother
