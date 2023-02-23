@@ -441,6 +441,10 @@ $endif$
 $endif$
 
 \begin{document}
+
+% Set Roman Page Numbering First
+\pagenumbering{roman}
+
 $if(has-frontmatter)$
 \frontmatter
 $endif$
@@ -456,6 +460,9 @@ $abstract$
 \end{abstract}
 $endif$
 $endif$
+
+% Start with page 2 (ii)
+\setcounter{page}{2}
 
 $for(include-before)$
 $include-before$
@@ -491,6 +498,11 @@ $endif$
 $if(linestretch)$
 \setstretch{$linestretch$}
 $endif$
+
+% Change Page Numbering To Arabic
+\clearpage
+\pagenumbering{arabic}
+
 $if(has-frontmatter)$
 \mainmatter
 $endif$
