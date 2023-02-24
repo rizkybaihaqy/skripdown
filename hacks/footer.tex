@@ -1,0 +1,9 @@
+% Set Page numbering to bottom right with 0pt spacing from margin
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{\pagestyle{fancy}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{0pt}

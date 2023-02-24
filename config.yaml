@@ -37,6 +37,7 @@ reference-section-title: "Daftar Pustaka"
 numbersections: 4
 header-includes:
   - \input{hacks/maketitle.tex}
+  - \input{hacks/footer.tex}
 include-before:
   - \input{frontmatter/pernyataan.tex}
   - \input{frontmatter/pengesahan.tex}
