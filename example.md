@@ -1,5 +1,7 @@
 # Pendahuluan
 
+Bab pendahuluan ini membahas mengenai latar belakang masalah, rumusan masalah, tujuan dan manfaat, ruang lingkup, serta sistematika penulisan yang akan digunakan dalam dokumen skripsi ini.
+
 ## Latar Belakang
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione magni ipsa iste provident consequuntur corrupti dignissimos ipsum veritatis iure inventore doloribus, quasi ducimus perferendis odit quaerat vitae ipsam dolore, saepe velit reprehenderit vel perspiciatis placeat voluptas. Nemo perferendis ad, fugit earum excepturi odio, quisquam eligendi, ipsum harum ea alias consequatur optio! Repudiandae illo dolore excepturi in a impedit ut nostrum minima nemo iusto, nulla voluptatum porro aliquam rem itaque asperiores quod atque, sequi odio error! Deleniti, dolore aliquid, perferendis quidem dolorem distinctio, modi corporis dolores labore ullam eligendi non. Ipsum mollitia facilis eveniet molestiae laboriosam exercitationem laudantium excepturi dolore reiciendis incidunt quaerat vel eius enim libero voluptatem magni explicabo voluptate nemo ad, velit dolores cum optio vitae pariatur! Cupiditate incidunt tempore ipsum illo eius ullam optio! Exercitationem, perspiciatis a.
