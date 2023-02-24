@@ -10,7 +10,6 @@ lang: id
 dir: rtl
 # Latex
 # Layout
-block-headings: true
 classoption: portrait
 documentclass: report
 geometry:
@@ -38,6 +37,8 @@ numbersections: 4
 header-includes:
   - \input{hacks/maketitle.tex}
   - \input{hacks/footer.tex}
+  - \input{hacks/paragraph.tex}
+  - \input{hacks/heading.tex}
 include-before:
   - \input{frontmatter/pernyataan.tex}
   - \input{frontmatter/pengesahan.tex}

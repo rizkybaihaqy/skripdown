@@ -1,0 +1,19 @@
+\usepackage{titlesec}
+
+% Uppercase chapter followed by roman numbering and chapter name in uppercase without space in between
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\Large\filcenter}{\MakeUppercase{\chaptertitlename}\ \Roman{chapter}}{-12pt}{\Large\MakeUppercase}
+% Set before margin to -40pt to remove spacing added by something i dont know
+% Set after margin to 1.2\parskip (parskip is 12pt in paragraph.tex) to visually same as 2 * 1.5 space
+\titlespacing*{\chapter}{0pt}{-40pt}{1.2\parskip}
+
+% Section and sub(s) section is set have 12pt before and after
+% Even though in the guide said only set before, i can't find the config to set the first paragraph to have 12pt before. So as a workaround i set the after of section to 12pt
+\titleformat{\section}[hang]{\normalfont\bfseries}{\thesection.}{0pt}{}
+\titlespacing*{\section}{0pt}{12pt}{12pt}
+
+\titleformat{\subsection}[hang]{\normalfont\bfseries}{\thesubsection.}{0pt}{}
+\titlespacing*{\subsection}{0pt}{12pt}{12pt}
+
+\titleformat{\subsubsection}[hang]{\normalfont\bfseries}{\thesubsubsection.}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{12pt}{12pt}
