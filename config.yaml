@@ -35,6 +35,7 @@ reference-section-title: "Daftar Pustaka"
 # Override
 numbersections: 4
 header-includes:
+  - \input{hacks/debug.tex}
   - \input{hacks/maketitle.tex}
   - \input{hacks/footer.tex}
   - \input{hacks/paragraph.tex}
