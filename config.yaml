@@ -44,6 +44,7 @@ header-includes:
   - \input{hacks/paragraph.tex}
   - \input{hacks/heading.tex}
   - \input{hacks/numbering.tex}
+  - \input{hacks/table.tex}
 include-before:
   - \input{frontmatter/pernyataan.tex}
   - \input{frontmatter/pengesahan.tex}
