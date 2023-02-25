@@ -16,6 +16,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed architecto, dolorem
 
 ## Tujuan
 
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat.
+
 1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic dolore, delectus temporibus quod atque quae iure consequuntur ipsam adipisci harum.
 2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ipsum illo qui quae aperiam vero fugit inventore, voluptatum ex.
 
@@ -24,6 +26,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed architecto, dolorem
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, quae minima quidem quas dolorum quos, dolores, harum eius dolorem reiciendis non quam! Repellat tempore eaque suscipit, ducimus, quas fugiat in quia voluptates at accusantium pariatur. Quibusdam, dignissimos! Illo, saepe est.
 
 ## Ruang Lingkup
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis asperiores minima dignissimos.
 
 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis impedit incidunt quibusdam aperiam commodi eaque similique deserunt, voluptatibus vel, esse accusamus fugiat minus.
 2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, sunt incidunt.
@@ -124,6 +128,33 @@ Tabel dapat berlanjut ke halaman berikutnya jika terlalu besar untuk ditampilaka
 
 Table: Contoh Tabel Panjang \label{contohtabelpanjang}
 
+### Pemerian
+
+Pemerian memiliki tiga tipe yang dapat digunakan. Tipe pertama adalah pemerian singkat. Berikut adalah contoh pemerian singkat.
+
+1. Singkat
+2. Padat
+3. Jelas
+
+Pemerian tipe kedua adalah pemerian yang memiliki poin-poin panjang. Pemerian tipe ini dapat dicontohkan sebagai berikut.
+
+1. Pemerian yang memiliki poin yang panjang
+2. Dua kata atau lebih yang mungkin cukup panjang
+
+Pemerian tipe ketiga adalah pemerian yang dapat memiliki pemerian lagi di dalamnya. Pemerian tipe ini harus memiliki kepala pemerian lagi sebelum pemerian yang mengikutinya. Pemerian tipe ini dapat dicontohkan sebagai berikut.
+
+1. Pemerian
+
+   Text ini adalah penjelasan dari pemerian dengan penjelasan diikuti dengan pemerian. Fitur ini masih _buggy_ sehingga masih diperlukan _hack_ dengan menambahkan `\vspace{12pt}` setelah paragraf ini.
+   \vspace{12pt} <!-- Tambahkan ini  -->
+
+   a. Sit
+   b. Amet
+
+2. Tanpa Pemerian
+
+   Hanya berisi penjelasan dari pemerian ini tanpa pemerian yang mengikutinya.
+
 ### Gambar
 
 Gambar \ref{contohgambar} merupkan contoh gambar yang dihasilkan menggunakan konfigurasi ini.
@@ -135,22 +166,6 @@ Selain itu, gambar juga dapat diatur tinggi dan lebarnya secara manual seperti y
 ![Contoh Gambar yang Diatur Lebar dan Tingginya\label{contohgambarlebartinggi}](example.png){width=50% height=200px}
 
 Hindari gambar yang terlalu besar, Gambar yang terlalu besar akan menyebabkan gambar keluar dari halaman dan merusak layout.
-
-### Pemerian
-
-Gunakan angka, dan huruf.
-
-1. Lorem.
-
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quibusdam harum ex illum tenetur nobis nam voluptatem maiores explicabo.
-
-   a. Ipsum
-   b. Velit
-
-2. Ipsum.
-3. Dolor.
-4. Sit.
-5. Amet.
 
 ### Blok Kode
 

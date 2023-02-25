@@ -40,6 +40,7 @@ header-includes:
   - \input{hacks/footer.tex}
   - \input{hacks/paragraph.tex}
   - \input{hacks/heading.tex}
+  - \input{hacks/numbering.tex}
 include-before:
   - \input{frontmatter/pernyataan.tex}
   - \input{frontmatter/pengesahan.tex}
