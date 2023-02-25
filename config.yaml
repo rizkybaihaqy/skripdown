@@ -32,6 +32,9 @@ toc: true
 toc-depth: 4
 # Back matter
 reference-section-title: "Daftar Pustaka"
+# Tables Rules Lua
+tables-vrules: true
+tables-hrules: true
 # Override
 numbersections: 4
 header-includes:
