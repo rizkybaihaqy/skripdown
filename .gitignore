@@ -11,6 +11,7 @@
 !example.bib
 !readme.md
 !template.tex
+!tables-rules.lua
 
 !/hacks/maketitle.tex
 !/hacks/footer.tex
