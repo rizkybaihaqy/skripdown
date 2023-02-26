@@ -57,7 +57,7 @@ local function get_colspecs(div_attributes, column_count)
   if div_attributes.widths then
       local total = 0
       local widths = {}
-      for w in div_attributes.widths:gmatch('[^,]') do
+      for w in div_attributes.widths:gmatch('%s*(%d+)%s*,?') do
           table.insert(widths, tonumber(w))
           total = total + tonumber(w)
       end
