@@ -80,62 +80,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam molestias nostr
 
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit natus numquam alias in aperiam, sunt facere nam aspernatur eaque, quae odio labore dignissimos rerum quibusdam tenetur nisi quod porro culpa cupiditate deserunt iusto?
 
-### Tabel
-
-Tabel \ref{contohtabel} menunjukan hasil keluaran dari penggunaan tabel di markdown.
-
-:::{.list-table widths=2,4,40 aligns=c,r,l}
-   contoh tabel \label{contohtabel}
-
-   * - No
-     - Nilai
-     - Keterangan
-
-   * - 1
-     - 9.9
-     - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, earum minus, quos voluptates
-
-   * - 2
-     - 20
-     - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam accusantium possimus optio ex delectus, laudantium facilis suscipit, sed repellendus nisi nostrum in nesciunt consectetur quis consequatur magni, voluptas officiis voluptatibus!
-:::
-
-Tabel dapat berlanjut ke halaman berikutnya jika terlalu besar untuk ditampilakan di satu halaman. Contoh dari kasus ini dapat dilihat pada Tabel \ref{contohtabelpanjang}
-
-| Aktor | Deskripsi                               |
-| ----- | --------------------------------------- |
-| lorem | Lorem ipsum dolor sit.                  |
-| ipsum | Lorem ipsum dolor sit amet consectetur. |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-| dolor | Lorem, ipsum.                           |
-
-Table: Contoh Tabel Panjang \label{contohtabelpanjang}
-
 ### Pemerian
 
 Pemerian memiliki tiga tipe yang dapat digunakan. Tipe pertama adalah pemerian singkat. Berikut adalah contoh pemerian singkat.
@@ -162,6 +106,197 @@ Pemerian tipe ketiga adalah pemerian yang dapat memiliki pemerian lagi di dalamn
 2. Tanpa Pemerian
 
    Hanya berisi penjelasan dari pemerian ini tanpa pemerian yang mengikutinya.
+
+### Tabel
+
+Tabel \ref{contohtabel} menunjukan hasil keluaran dari penggunaan tabel di markdown.
+
+:::{.list-table widths=2,4,40 aligns=c,r,l}
+   Contoh tabel \label{contohtabel}
+
+   * - No
+     - Nilai
+     - Keterangan
+
+   * - 1
+     - 9.9
+     - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, earum minus, quos voluptates
+
+   * - 2
+     - 20
+     - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam accusantium possimus optio ex delectus, laudantium facilis suscipit, sed repellendus nisi nostrum in nesciunt consectetur quis consequatur magni, voluptas officiis voluptatibus!
+:::
+
+Tabel dapat berlanjut ke halaman berikutnya jika terlalu besar untuk ditampilakan di satu halaman. Contoh dari kasus ini dapat dilihat pada Tabel \ref{contohtabelpanjang}
+
+:::{.list-table widths=1,10,10 aligns=c,l,l}
+   Contoh Tabel Panjang \label{contohtabelpanjang}
+
+   * - No
+     - Aktor
+     - Deskripsi
+
+   * - 1
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 2
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 3
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 4
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 5
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 6
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 7
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 8
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 9
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 10
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 11
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 12
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 13
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 14
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 15
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 16
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 17
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 18
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 19
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 20
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 21
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 22
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 23
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 24
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 25
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 26
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 27
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 28
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 29
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 30
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 31
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 32
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 33
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 34
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 35
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 36
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 37
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 38
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 39
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+   * - 40
+     - Lorem
+     - Amet consectetur adipisicing elit
+
+:::
 
 ### Gambar
 
