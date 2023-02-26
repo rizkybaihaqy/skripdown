@@ -18,5 +18,5 @@ Repository ini berisi konfigurasi untuk mengkonversi skripsi S1 Informatika Undi
 3. Buat skripsi anda di file markdown(.md)
 4. Contoh cara menjalankan perintah `pandoc` menggunakan file `example.md` dan `example.bib`
 ```bash
-pandoc example.md --citeproc --bibliography=example.bib --csl=apa.csl --pdf-engine=xelatex --metadata-file config.yaml --template=template.tex --lua-filter tables-rules.lua  -o example.pdf
+pandoc example.md --citeproc --bibliography=example.bib --csl=template/apa.csl --pdf-engine=xelatex --metadata-file config.yaml --template=template/template.tex --lua-filter lua-filters/list-table.lua --lua-filter lua-filters/tables-rules.lua -o example.pdf
 ```
