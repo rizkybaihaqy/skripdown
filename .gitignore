@@ -12,6 +12,7 @@
 !readme.md
 !template.tex
 !tables-rules.lua
+!list-table.lua
 
 !/hacks/maketitle.tex
 !/hacks/footer.tex

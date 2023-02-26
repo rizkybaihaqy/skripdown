@@ -84,13 +84,21 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit natus nu
 
 Tabel \ref{contohtabel} menunjukan hasil keluaran dari penggunaan tabel di markdown.
 
-| Aktor | Deskripsi                               |
-| ----- | --------------------------------------- |
-| lorem | Lorem ipsum dolor sit.                  |
-| ipsum | Lorem ipsum dolor sit amet consectetur. |
-| dolor | Lorem, ipsum.                           |
+:::{.list-table widths=2,4,40 aligns=c,r,l}
+   contoh tabel \label{contohtabel}
 
-Table: Contoh Tabel \label{contohtabel}
+   * - No
+     - Nilai
+     - Keterangan
+
+   * - 1
+     - 9.9
+     - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, earum minus, quos voluptates
+
+   * - 2
+     - 20
+     - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam accusantium possimus optio ex delectus, laudantium facilis suscipit, sed repellendus nisi nostrum in nesciunt consectetur quis consequatur magni, voluptas officiis voluptatibus!
+:::
 
 Tabel dapat berlanjut ke halaman berikutnya jika terlalu besar untuk ditampilakan di satu halaman. Contoh dari kasus ini dapat dilihat pada Tabel \ref{contohtabelpanjang}
 
