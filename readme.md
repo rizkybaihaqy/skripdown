@@ -13,8 +13,8 @@ Repository ini berisi konfigurasi untuk mengkonversi skripsi S1 Informatika Undi
 - Dapat digunakan pada sistem operasi Windows, macOS, dan Linux
 
 ## Penggunaan
-1. Unduh atau clone repository ini
-2. Pastikan anda sudah meng-install engine pdf `xelatex`
+1. Clone repository atau unduh dari [releases](https://github.com/rizkybaihaqy/Skripsi-S1-Informatika-Undip-Pandoc-LaTeX-Template/releases)
+2. Pastikan anda sudah meng-install engine pdf apapun, namun pada contoh ini kami menggunakan `xelatex`
 3. Buat skripsi anda di file markdown(.md)
 4. Contoh cara menjalankan perintah `pandoc` menggunakan file `example.md` dan `example.bib`
 ```bash
