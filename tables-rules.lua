@@ -38,6 +38,27 @@ function repl_multicol_r(m1, m2)
   return m1 .. '{' .. m2 .. '|}'
 end
 
+function centeringThead(thead)
+  local final = ""
+  for line in thead:gmatch("[^\r\n]+") do
+    -- Split the line by "&"
+    local line_values = {}
+    for value in line:gmatch("[^&]+") do
+      local without_backslash = value:gsub("\\", "")
+      -- Remove any leading/trailing whitespace
+      local without_whitespace = without_backslash:gsub("^%s*(.-)%s*$", "%1")
+      local value = "\\multicolumn{1}{@{}|c|@{}}{"..without_whitespace.."}"
+      -- Add the value to the list for this line
+      table.insert(line_values, value)
+    end
+
+    local value1 = line_values[1]
+    local value2 = line_values[2]
+    final = "\n"..line_values[1].." & "..line_values[2].." \\\\\n"
+  end
+  return final
+end
+
 function Table(table)
   local returned_list
   local latex_code = ''
@@ -52,6 +73,10 @@ function Table(table)
 
     -- Get latex code for the whole table
     latex_code = pandoc.write ( pandoc.Pandoc({table}),'latex' )
+
+    local thead = latex_code:match("\\toprule%(%)(.-)\\midrule%(%)")
+    local theadCentered = centeringThead(thead)
+    latex_code = string.gsub(latex_code, thead, theadCentered)
 
     -- Rewrite column definition to add vertical rules if needed
     if vars.vrules then
