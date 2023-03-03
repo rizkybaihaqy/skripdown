@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+  </head>
+  <body>
+    <form action="/" method="post" name="form" enctype="multipart/form-data">
+      <input type="file" name="skripsi" id="file" accept=".md" required>
+      <input type="file" name="bib" id="file" accept=".bib" required>
+      <input
+        type="file"
+        name="assets"
+        id="file"
+        accept="image/png, image/jpeg"
+        multiple
+        required
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

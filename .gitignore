@@ -34,5 +34,7 @@
 !/frontmatter/pernyataan.tex
 !/frontmatter/persetujuan.tex
 
+!/server/**/*
+
 # ...even if they are in subdirectories
 !*/
