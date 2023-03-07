@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Skripdown</title>
+    <meta name="description" content="Tulis Skripsi di Markdown" />
+    <meta
+      name="keywords"
+      content="skripsi, undip, markdown, pdf, pandoc, latex"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skripdown</title>
   </head>
   <style>
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      width: 520px;
+      margin: 0 auto;
     }
     form {
       display: flex;
@@ -19,6 +23,7 @@
       gap: 1rem;
       padding: 2rem;
       border: thin solid #ccc;
+      width: fit-content;
     }
     label {
       text-align: right;
@@ -44,13 +49,47 @@
     }
   </style>
   <body>
+    <hgroup>
+      <h1>Skripdown</h1>
+      <p>Tulis Skripsi di Markdown</p>
+    </hgroup>
+    <p>
+      Skripdown adalah aplikasi web yang memudahkan konversi dokumen skripsi S1
+      Informatika Undip dari format Markdown menjadi PDF menggunakan pandoc dan
+      LaTeX. Template LaTeX yang digunakan oleh aplikasi ini dapat ditemukan di
+      <a
+        href="https://github.com/rizkybaihaqy/Skripsi-S1-Informatika-Undip-Pandoc-LaTeX-Template"
+        >github.com/rizkybaihaqy/Skripsi-S1-Informatika-Undip-Pandoc-LaTeX-Template</a
+      >.
+    </p>
+    <p>Contoh file:</p>
+    <ul>
+      <li>
+        <a
+          href="https://github.com/rizkybaihaqy/Skripsi-S1-Informatika-Undip-Pandoc-LaTeX-Template/blob/master/example.md"
+          >Markdown</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/rizkybaihaqy/Skripsi-S1-Informatika-Undip-Pandoc-LaTeX-Template/blob/master/example.bib"
+          >Bibtex</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/rizkybaihaqy/Skripsi-S1-Informatika-Undip-Pandoc-LaTeX-Template/blob/master/example.png"
+          >Gambar</a
+        >
+      </li>
+    </ul>
     <form action="/" method="post" name="form" enctype="multipart/form-data">
       <label for="skripsi"
-        >Markdown
+        >File Markdown (.md)
         <sup
           ><button
             type="button"
-            title="File skripsi dalam bentuk markdown (.md)"
+            title="File berisi konten skripsi dalam format Markdown (.md)"
           >
             ?
           </button></sup
@@ -59,11 +98,11 @@
         <input type="file" name="skripsi" id="file" accept=".md" required
       /></label>
       <label for="bib"
-        >Bibtex
+        >File Referensi (.bib)
         <sup
           ><button
             type="button"
-            title="File referensi dalam bentuk bibtex (.bib)"
+            title="File berisi daftar referensi dalam format BibTeX (.bib)"
           >
             ?
           </button></sup
@@ -72,11 +111,11 @@
         <input type="file" name="bib" id="file" accept=".bib" required
       /></label>
       <label for="bib"
-        >Gambar
+        >File Gambar (PNG/JPG)
         <sup
           ><button
             type="button"
-            title="Seluruh gambar yang di referensi di file skripsi markdown"
+            title="File berisi seluruh gambar yang diacu pada konten skripsi dalam format PNG atau JPG"
           >
             ?
           </button></sup
@@ -90,7 +129,7 @@
           multiple
           required
       /></label>
-      <button type="submit">Submit</button>
+      <button type="submit">Konversi ke PDF</button>
     </form>
   </body>
 </html>
