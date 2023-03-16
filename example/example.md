@@ -71,13 +71,27 @@ Bab V adalah penutup. Bab ini berisi kesimpulan yang ditemukan pada skripsi dan 
 
 # Landasan Teori
 
-## Similique Pariatur
+## Markdown
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla omnis aliquid enim harum officiis magnam dolorem laborum molestiae maxime, fugit ipsum repellat doloremque, tempora recusandae, reprehenderit officia quae. Cumque ducimus dignissimos temporibus similique cupiditate illo suscipit modi, quos explicabo id provident quis, molestiae, accusantium dolorem qui laudantium ipsum magnam dolor aut eaque ex eligendi ea quisquam veritatis. Voluptatibus, ipsum. Nesciunt corporis molestias rem, inventore laboriosam ad repudiandae veniam aperiam veritatis consequuntur, praesentium ratione magnam recusandae nulla temporibus modi nostrum quam error voluptates adipisci dolorem non, eveniet reiciendis. Placeat, quia sapiente nobis vel architecto repellendus suscipit exercitationem hic, ea sunt culpa.
+Markdown adalah format teks ringan yang dirancang untuk memudahkan penulis dalam membuat dokumen dengan cepat dan mudah dibaca. Dibuat oleh John Gruber pada tahun 2004, Markdown menggunakan sintaks sederhana dan intuitif yang dapat dengan mudah dikonversi ke dalam format HTML.
 
-## Nesciunt corporis
+Menurut @gruber_daring_2004, Markdown dirancang untuk memungkinkan penulis untuk fokus pada konten tulisan, bukan pada format atau tata letak. Markdown juga memberikan fleksibilitas dalam menambahkan elemen seperti gambar, tautan, tabel, dan daftar dengan sintaks yang mudah dipahami.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsam optio aliquam impedit praesentium iure, corrupti officiis modi, tempora minima excepturi similique nisi saepe recusandae facilis perferendis? Corporis quo ducimus, blanditiis labore id magni sequi delectus facere suscipit, commodi impedit assumenda nemo ipsa veniam odit cum voluptas atque soluta error voluptatem consectetur in, doloremque temporibus. Non laborum accusantium ex cum provident? Mollitia magni, accusamus autem perspiciatis quas a doloremque, aliquam omnis, dolor perferendis fuga cum. Consequuntur, qui incidunt.
+## LaTeX
+
+LaTeX merupakan bahasa markup dan sistem penyiapan dokumen yang populer di kalangan penulis ilmiah, terutama di bidang ilmu pengetahuan dan matematika [@lamport_latex_1994]. Dalam LaTeX, penulis dapat menulis isi dokumen tanpa khawatir tentang tampilannya, karena tampilan dokumen akan dihasilkan secara otomatis sesuai dengan aturan-aturan yang telah ditentukan sebelumnya. Dengan menggunakan LaTeX, penulis juga dapat dengan mudah menulis rumus matematika yang rumit dan notasi yang kompleks serta memformat dokumen dengan berbagai macam gaya dan tata letak yang berbeda melalui penggunaan paket dan kelas dokumen yang tersedia.
+
+## YAML
+
+YAML merupakan singkatan dari "YAML Ain't Markup Language", yaitu suatu format serialisasi data yang dirancang untuk memudahkan pembacaan dan penulisan oleh manusia. Format YAML biasanya digunakan untuk menyimpan dan membaca konfigurasi pada perangkat lunak, karena memungkinkan pengguna untuk mengorganisir data secara hierarkis dan mudah dibaca oleh manusia. Dalam skripsi ini, format YAML digunakan untuk mengatur konfigurasi dan parameter pada aplikasi yang dikembangkan [@ben-kiki_yaml_2021].
+
+## Lua
+
+Lua adalah bahasa pemrograman scripting yang ringan, cepat, dan dapat diperluas dengan mudah. Bahasa ini dikembangkan oleh PUC-Rio (Pontifical Catholic University of Rio de Janeiro) pada tahun 1993 dan sejak itu telah digunakan dalam berbagai aplikasi seperti game development, embedded systems, dan web development. Salah satu keunggulan Lua adalah kemampuannya untuk menawarkan kontrol yang sangat tinggi pada pemrogram saat mengeksekusi kode. Sebagai bahasa scripting, Lua memiliki sintaks yang mirip dengan bahasa Pascall dan C [@ierusalimschy_programming_2006].
+
+## Pandoc
+
+Pandoc adalah sebuah program yang digunakan untuk mengonversi dokumen dari satu format ke format lainnya. Program ini mendukung berbagai format dokumen, seperti HTML, LaTeX, Markdown, dan sebagainya [@macfarlane_pandoc_2011]. Pandoc juga mendukung berbagai fitur, seperti konversi dokumen ke PDF, DOCX, dan format lainnya, serta memungkinkan pengguna untuk menambahkan metadata ke dokumen. Program ini cukup fleksibel dan dapat digunakan dalam berbagai konteks, seperti penulisan akademik, publikasi, dan pengembangan perangkat lunak. Dalam penulisan akademik, Pandoc dapat digunakan untuk mengonversi dokumen dari satu format ke format lainnya, serta memungkinkan pengguna untuk menambahkan metadata, seperti judul, penulis, dan referensi [@macfarlane_pandoc_2011].
 
 # Metodologi Penelitian
 
