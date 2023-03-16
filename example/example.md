@@ -373,7 +373,7 @@ $$
 
 ### Kutipan
 
-Ini saya sedang mencoba melakukan kutipan di akhir kalimat [@Smith2018]. Menurut @Smith2018, ini adalah penulisan kutipan dengan sytle APA yang benar di awal kalimat.
+Ini saya sedang mencoba melakukan kutipan di akhir kalimat [@smith_how_2018]. Menurut @smith_how_2018, ini adalah penulisan kutipan dengan sytle APA yang benar di awal kalimat.
 
 ## Ex ipsam
 
