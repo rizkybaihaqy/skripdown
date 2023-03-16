@@ -11,43 +11,63 @@ Bab pendahuluan ini membahas mengenai latar belakang masalah, rumusan masalah, t
 
 ## Latar Belakang
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ratione magni ipsa iste provident consequuntur corrupti dignissimos ipsum veritatis iure inventore doloribus, quasi ducimus perferendis odit quaerat vitae ipsam dolore, saepe velit reprehenderit vel perspiciatis placeat voluptas. Nemo perferendis ad, fugit earum excepturi odio, quisquam eligendi, ipsum harum ea alias consequatur optio! Repudiandae illo dolore excepturi in a impedit ut nostrum minima nemo iusto, nulla voluptatum porro aliquam rem itaque asperiores quod atque, sequi odio error! Deleniti, dolore aliquid, perferendis quidem dolorem distinctio, modi corporis dolores labore ullam eligendi non. Ipsum mollitia facilis eveniet molestiae laboriosam exercitationem laudantium excepturi dolore reiciendis incidunt quaerat vel eius enim libero voluptatem magni explicabo voluptate nemo ad, velit dolores cum optio vitae pariatur! Cupiditate incidunt tempore ipsum illo eius ullam optio! Exercitationem, perspiciatis a.
+Penulisan skripsi kerap kali dibebani dengan masalah format penulisan yang tidak sesuai. Menurut teman-teman kontributor github repository ini, masalah penulisan yang sepele namun merepotkan. Penelitian sejatinya adalah penulisan konten dan bukan tentang format konten. Peneliti bukanlah editor yang harus memperharikan estetika format penulisan.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores laborum molestias provident iusto ad magnam deleniti delectus, laboriosam aliquid explicabo nesciunt in quia odit? Inventore ducimus ex nulla animi unde!
+Alat yang populer digunakan untuk skripsi adalah mesin pengolah kata. Mesin pengolah kata dapat terbilang flexible dan mudah untuk diubah. Alat ini populer disebut dengan istilah *what you see is what you get*. Namun, hal ini juga yang menjadi kelemahannya. Alat berikutnya yang popularitasnya berada dibawah mesin pengolah kata, adalah LaTeX. LaTeX memiliki kelebihan karena memiliki format file *plain text*. Format ini lebih fleksibel karena dapat dibuka di mayortias komputer. Namun, LaTeX memiliki *syntax* yang membutuhkan kurva pembelajaran yang tinggi.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reprehenderit sed quidem incidunt ducimus illum repellendus! Deserunt consectetur molestiae itaque aspernatur error autem numquam et a doloribus quibusdam totam sed, ratione suscipit temporibus accusantium dolorum, odit fugiat, sequi qui asperiores reiciendis ipsam! Officia, vel itaque modi facere saepe doloribus magnam reprehenderit, maxime fugiat magni aliquid. Voluptate, eum. Qui reprehenderit reiciendis corrupti earum odit maxime. Doloremque eos, maxime, quia vel ad eaque sunt similique vitae deserunt alias perspiciatis dolor unde exercitationem suscipit error! Saepe nobis obcaecati a aut laudantium earum dolores officiis. Accusamus deleniti adipisci nihil? Quaerat dignissimos tempora ullam dolore ex amet aperiam eius, aspernatur hic non vel deleniti enim? Quas, eaque reprehenderit? Facilis ducimus a blanditiis omnis id nulla perferendis placeat autem consequatur praesentium. Adipisci saepe mollitia voluptatem dolorum nobis natus. Dolore aspernatur culpa delectus quam molestias, eaque incidunt ducimus recusandae non eum et minima.
+Sayangnya, kedua opsi yang ditunjukan sebelumnya masih belum mengikuti aturan software engineering nomor 9, yaitu *separation of concerns leads to standard architectures* [@endres_handbook_2003]. Masih adanya tanggung jawab pengguna untuk mengatur format penulisan saat melakukan penulisan meningkatkan kompleksitas penggunaan.
+
+*Separation of concerns* sudah diimplementasikan di pemograman web dengan memisahkan konten dalam bentuk file HTML dengan *styling*-nya dalam bentuk file css. Meskipun di dalam html dapat diberikan *styling*, hal ini bukanlah cara terbaik karena hukum *separation of concern* yang telah disebutkan sebelumnya. Namun, HTML memiliki banyak *noise* karena penggunaan tag pembuka dan penutupnya.
+
+Markdown, di sisi lain, adalah format teks ringan yang digunakan untuk membuat dokumen yang mudah dibaca dan ditulis. Dalam penggunaannya, Markdown dapat dikombinasikan dengan alat-alat bantu seperti Git dan GitHub untuk memudahkan kolaborasi dan revisi skripsi. Dengan mengunggah skripsi dalam format Markdown ke dalam repositori GitHub, penulis skripsi dapat memperoleh manfaat dari kontrol versi, komentar, dan pemantauan perubahan.
+
+Sayangnya markdown tidak memiliki kemampuan *styling* seperti halnya HTML. Untuk itu diperlukan konversi menjadi format lain yang dapat memberikan *styling*.
+
+Untuk mengatasi permasalah tersebut, dibutuhkan cara untuk membuat proses penulisan skripsi menjadi lebih mudah dengan memisahkan atau mungkin tidak sama sekali mengatur format penulisan sehingga fokus dalam penulisan.
+
+Dalam proses konversi markdown membutuhkan alat untuk mengkonversi format file yang akan digunakan untuk menulis menjadi file dengan format yang memiliki format penulisan yang sesuai.
+
+Pandoc adalah salah satu alat yang dapat mengkonversi file dengan format markdown menjadi LaTeX yang kemudian dapat menciptkan file pdf. Namun, pandoc membutuhkan konfigurasi untuk mendapatkan format penulisan yang sesuai. Untuk itu tujuan dari penelitian ini adalah menciptkan alat yang dapat melakukan konversi untuk penulisan skripsi dalam format file markdown sehingga mendapatkan file dengan format pdf degan format penulisan yang sudah sesuai.
 
 ## Rumusan Masalah
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed architecto, doloremque rerum, aperiam iusto delectus commodi laborum sit necessitatibus maxime ad nemo est accusantium optio reprehenderit eius totam quos ipsam?
+Berdasarkan temuan dan penjelasan masalah yang dikemukakan di latar belakang, maka dilakukan penelitian untuk menciptkan alat yang dapat melakukan konversi penulisan skripsi dalam format file markdown menggunakan pandoc.
 
 ## Tujuan
 
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat.
-
-1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic dolore, delectus temporibus quod atque quae iure consequuntur ipsam adipisci harum.
-2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ipsum illo qui quae aperiam vero fugit inventore, voluptatum ex.
+Tujuan dari penelitian adalah menciptkan alat yang dapat melakukan konversi untuk penulisan skripsi dalam format file markdown sehingga mendapatkan file dengan format pdf degan format penulisan yang sudah sesuai.
 
 ## Manfaat Penelitian
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, quae minima quidem quas dolorum quos, dolores, harum eius dolorem reiciendis non quam! Repellat tempore eaque suscipit, ducimus, quas fugiat in quia voluptates at accusantium pariatur. Quibusdam, dignissimos! Illo, saepe est.
+Manfaat dalam penelitian ini adalah sebagai berikut.
+
+1. Bagi institusi
+  Mendapatkan satu format baku yang dapat menjadi sumber kebenaran.
+
+2. Bagi Peneliti selanjutnya
+  Penelitian ini dapat menjadi acuan untuk penelitian selanjutnya yang serupa.
 
 ## Ruang Lingkup
 
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis asperiores minima dignissimos.
+Ruang lingkup dalam penelitian ini adalah.
 
-1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis impedit incidunt quibusdam aperiam commodi eaque similique deserunt, voluptatibus vel, esse accusamus fugiat minus.
-2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, sunt incidunt.
+1. Menciptakan konfigurasi pandoc yang sesuai dengan format penulisan skripsi.
+2. File yang dihasilkan adalah file pdf.
 
 ## Sistematika Penulisan
 
-Penjelasan secara singkat isi bab I - V
+Sistematika penulisan yang digunakan dalam skripsi ini terbagi menjadi dalam
+beberapa pokok bahasan.
 
-1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi.
-2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quod.
-3. Lorem ipsum dolor sit amet.
-4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique pariatur qui est.
-5. Lorem ipsum dolor sit.
+Bab I adalah pendahuluan. Bab ini berisi latar belakang, rumusan masalah, tujuan, manfaat, ruang lingkup, dan sistematika penulisan dalam penyusunan skripsi.
+
+Bab II adalah landasan teori. Bab ini berisi teori-teori yang menjadi acuan dan penjelasan alat-alat yang digunakan dalam penyusunan skripsi.
+
+Bab III adalah metodologi penulisan. Bab ini berisi penjelasan metodologi yang akan digunakan dalam penyusunan skripsi.
+
+Bab IV adalah hasil dan pembahasan. Bab ini berisi analisi kebutuhan, perencanaan alat yang akan dihasilkan, hasil implementasi pembuatan alat konversi dan penjelasan cara penggunnya.
+
+Bab V adalah penutup. Bab ini berisi kesimpulan yang ditemukan pada skripsi dan saran yang untuk penelitian berikutnya.
 
 # Landasan Teori
 
