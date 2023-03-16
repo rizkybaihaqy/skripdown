@@ -1,3 +1,10 @@
+---
+title: Skripsi S1 Informatika Undip Pandoc Latex Template
+author: Rizky Muhammad Baihaqy
+nim: 24060118130000
+date: 1 Januari 2023
+keywords: skripsi, informatika
+---
 # Pendahuluan
 
 Bab pendahuluan ini membahas mengenai latar belakang masalah, rumusan masalah, tujuan dan manfaat, ruang lingkup, serta sistematika penulisan yang akan digunakan dalam dokumen skripsi ini.
