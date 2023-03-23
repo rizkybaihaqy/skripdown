@@ -38,18 +38,18 @@ tables-hrules: true
 # Override
 numbersections: 4
 header-includes:
-  - \input{hacks/debug.tex}
-  - \input{hacks/maketitle.tex}
-  - \input{hacks/footer.tex}
-  - \input{hacks/paragraph.tex}
-  - \input{hacks/heading.tex}
-  - \input{hacks/numbering.tex}
+  - \input{.skripdown/hacks/debug.tex}
+  - \input{.skripdown/hacks/maketitle.tex}
+  - \input{.skripdown/hacks/footer.tex}
+  - \input{.skripdown/hacks/paragraph.tex}
+  - \input{.skripdown/hacks/heading.tex}
+  - \input{.skripdown/hacks/numbering.tex}
 include-before:
-  - \input{frontmatter/pernyataan.tex}
-  - \input{frontmatter/pengesahan.tex}
-  - \input{frontmatter/pengantar.tex}
-  - \input{frontmatter/persetujuan.tex}
-  - \input{frontmatter/abstrak.tex}
-  - \input{frontmatter/abstract.tex}
+  - \input{.skripdown/frontmatter/pernyataan.tex}
+  - \input{.skripdown/frontmatter/pengesahan.tex}
+  - \input{.skripdown/frontmatter/pengantar.tex}
+  - \input{.skripdown/frontmatter/persetujuan.tex}
+  - \input{.skripdown/frontmatter/abstrak.tex}
+  - \input{.skripdown/frontmatter/abstract.tex}
 include-after:
-  - \input{backmatter/lampiran.tex}
+  - \input{.skripdown/backmatter/lampiran.tex}
