@@ -1,8 +1,8 @@
-# Skripsi S1 Informatika Undip - Pandoc LaTeX Template
+# SKRIPDOWN
 
 > Template belum terbukti diterima oleh dosen karena penulis sendiri masih dalam proses menyusun skripsi
 
-Repository ini berisi konfigurasi untuk mengkonversi skripsi S1 Informatika Undip yang ditulis menggunakan markdown menjadi file PDF menggunakan pandoc dan LaTeX. Konfigurasi ini telah disesuaikan dengan pedoman skripsi versi 2023.
+Repository ini berisi konfigurasi dan aplikasi _command line interface_ untuk mengkonversi skripsi S1 Informatika Undip yang ditulis menggunakan markdown menjadi file PDF menggunakan pandoc dan LaTeX. Konfigurasi ini telah disesuaikan dengan pedoman skripsi versi 2023.
 
 ## Fitur
 
