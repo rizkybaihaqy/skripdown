@@ -3,7 +3,7 @@ import std/[os, parseopt], pandoc
 proc writeHelp() =
   echo """
 
-  SKRIPDOWN - Tulis Skripsi di Markdown 0.1.0
+  SKRIPDOWN - Tulis Skripsi di Markdown 0.2.0
 
   usage: skripdown [options] <markdown-file>
 
@@ -16,7 +16,7 @@ proc writeHelp() =
   """
 
 proc writeVersion() =
-  echo "SKRIPDOWN - Tulis Skripsi di Markdown 0.1.0"
+  echo "SKRIPDOWN - Tulis Skripsi di Markdown 0.2.0"
 
 proc cli*() =
   var
