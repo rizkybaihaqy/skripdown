@@ -36,7 +36,8 @@ skripdown example.md --bibliography="example.bib" --output="example.pdf"
 - Pastikan untuk menjalankan cli di direktori yang sama dengan file markdown, file referensi, dan file-file gambar
 - Di windows gunakan perintah `skripdown.exe` untuk menjalankan cli
 
-5. File PDF akan terbentuk di folder yang sama dengan file markdown. Cli akan membuat direktori `.skripdown`. Proses ini hanya akan dilakukan jika folder tersebut belum ada
+5. File PDF akan terbentuk di folder yang sama dengan file markdown.
+- Cli akan membuat direktori `.skripdown` di direktori yang sama dimana binary dijalankan. Direktori ini berisi template yang digunakan untuk proses konversi. Proses ini hanya akan dilakukan jika folder tersebut belum ada
 
 ### Pandoc
 
