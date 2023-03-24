@@ -45,8 +45,8 @@ skripdown example.md --bibliography="example.bib" --output="example.pdf"
 2. Contoh cara menjalankan perintah `pandoc` menggunakan file `example.md` dan `example.bib`
 
 ```powershell
-pandoc skripsi.md `
-  --bibliography=skripsi.bib `
+pandoc example.md `
+  --bibliography=example.bib `
   --citeproc `
   --csl=.skripdown/template/apa.csl `
   --pdf-engine=xelatex `
@@ -54,7 +54,7 @@ pandoc skripsi.md `
   --template=.skripdown/template/template.tex `
   --lua-filter=.skripdown/lua-filters/list-table.lua `
   --lua-filter=.skripdown/lua-filters/tables-rules.lua `
-  --output=skripsi.pdf
+  --output=example.pdf
 ```
 
 ## Resep
