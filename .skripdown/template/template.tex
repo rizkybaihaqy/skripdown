@@ -256,7 +256,7 @@ $else$
 \makesavenoteenv{longtable}
 $endif$
 $endif$
-$if(graphics)$
+% $if(graphics)$ % always import this
 \usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -270,7 +270,7 @@ $if(graphics)$
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-$endif$
+% $endif$
 $if(strikeout)$
 $-- also used for underline
 \usepackage[normalem]{ulem}
