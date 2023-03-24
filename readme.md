@@ -23,7 +23,7 @@ Repository ini berisi konfigurasi dan aplikasi _Command Line Interface_ (CLI) un
 
 ### CLI
 
-1. Unduh file binary sesuai dengan sistem operasi dari [rilis terakhir](https://github.com/rizkybaihaqy/Skripsi-S1-Informatika-Undip-Pandoc-LaTeX-Template/releases)
+1. Unduh file binary sesuai dengan sistem operasi dari [releases](https://github.com/rizkybaihaqy/skripdown/releases)
 2. _Copy_ file binary ke folder yang sama dengan file markdown, referensi, dan file-file gambar
 3. Buka terminal dan masuk ke folder yang sama dengan file markdown, referensi, dan file-file gambar
 4. Jalankan perintah berikut di diretori yang sama dengan file markdown, file referensi, dan file-file gambar untuk mengkonversi file markdown menjadi file PDF
@@ -40,7 +40,7 @@ skripdown example.md --bibliography="example.bib" --output="example.pdf"
 
 ### Pandoc
 
-1. Clone repository atau unduh dari [releases](https://github.com/rizkybaihaqy/Skripsi-S1-Informatika-Undip-Pandoc-LaTeX-Template/releases)
+1. Clone repository atau unduh dari [releases](https://github.com/rizkybaihaqy/skripdown/releases)
 2. Contoh cara menjalankan perintah `pandoc` menggunakan file `example.md` dan `example.bib`
 
 ```powershell
